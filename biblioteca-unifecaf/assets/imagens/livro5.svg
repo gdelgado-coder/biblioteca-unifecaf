@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 420" role="img">
+<defs><linearGradient id="g" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#004878"/><stop offset="1" stop-color="#00304F"/></linearGradient></defs>
+<rect width="300" height="420" fill="url(#g)"/>
+<rect width="14" height="420" fill="#000" opacity=".18"/><rect x="14" width="2" height="420" fill="#fff" opacity=".35"/>
+<text x="32" y="46" font-family="Arial, Helvetica, sans-serif" font-size="11" font-weight="700" letter-spacing="3" fill="#FFFFFF" opacity=".8">DIREITO</text>
+<text x="32" y="94" font-family="Poppins, Arial, Helvetica, sans-serif" font-size="27" font-weight="700" fill="#FFFFFF">Direito</text>
+<text x="32" y="126" font-family="Poppins, Arial, Helvetica, sans-serif" font-size="27" font-weight="700" fill="#FFFFFF">Digital</text>
+<rect x="32" y="142" width="46" height="5" rx="2.5" fill="#95DE68"/>
+<rect x="147" y="192" width="6" height="122" fill="#95DE68"/><rect x="108" y="312" width="84" height="8" rx="4" fill="#95DE68"/><rect x="58" y="200" width="184" height="6" rx="3" fill="#95DE68"/>
+<g stroke="#fff" stroke-width="2" opacity=".85"><line x1="72" y1="204" x2="50" y2="262"/><line x1="72" y1="204" x2="98" y2="262"/><line x1="228" y1="204" x2="204" y2="262"/><line x1="228" y1="204" x2="252" y2="262"/></g>
+<path d="M44 262 H104 A30 24 0 0 1 44 262 Z" fill="#fff"/><path d="M198 262 H258 A30 24 0 0 1 198 262 Z" fill="#fff"/>
+<rect y="372" width="300" height="48" fill="#000000" opacity=".16"/>
+<rect x="32" y="388" width="16" height="16" rx="3" fill="#95DE68"/>
+<text x="56" y="401" font-family="Poppins, Arial, Helvetica, sans-serif" font-size="15" font-weight="700" fill="#FFFFFF">UniFECAF</text>
+<text x="268" y="401" text-anchor="end" font-family="Arial, Helvetica, sans-serif" font-size="10" fill="#FFFFFF" opacity=".8">Coleção Biblioteca</text>
+</svg>

@@ -1,0 +1,479 @@
+/* ===== Variáveis: identidade visual UniFECAF ===== */
+:root {
+  --azul: #0060A8;
+  --azul-escuro: #004878;
+  --noite: #00304F;
+  --verde: #95DE68;
+  --claro: #F3F6FF;
+  --verde-claro: #E9F6E0;
+  --texto: #0F1E3D;
+  --branco: #FFFFFF;
+  --fonte-titulo: "Poppins", "Segoe UI", Arial, sans-serif;
+  --fonte-texto: "Nunito Sans", "Segoe UI", Arial, sans-serif;
+}
+
+/* ===== Base ===== */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 90px;
+}
+
+body {
+  font-family: var(--fonte-texto);
+  font-size: 1.05rem;
+  line-height: 1.6;
+  color: var(--branco);
+  background: var(--noite);
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+h1, h2, h3 {
+  font-family: var(--fonte-titulo);
+  line-height: 1.2;
+}
+
+a:focus-visible {
+  outline: 3px solid var(--verde);
+  outline-offset: 3px;
+}
+
+.conteudo {
+  width: min(1100px, 100% - 2rem);
+  margin: 0 auto;
+}
+
+section h2 {
+  font-size: 1.6rem;
+  margin-bottom: 1.5rem;
+}
+
+/* Link de acessibilidade */
+.pular {
+  position: absolute;
+  left: -999px;
+  background: var(--verde);
+  color: var(--noite);
+  padding: 0.5rem 1rem;
+  z-index: 20;
+}
+
+.pular:focus {
+  left: 1rem;
+  top: 1rem;
+}
+
+/* ===== Topo e menu ===== */
+.topo {
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  padding: 0.75rem 1.5rem;
+  background: var(--azul-escuro);
+  border-bottom: 3px solid var(--verde);
+}
+
+.marca {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  color: var(--branco);
+  text-decoration: none;
+  font-family: var(--fonte-titulo);
+  font-weight: 600;
+  font-size: 1rem;
+}
+
+/* Logo em versão clara (fundo transparente): aplicado direto sobre o fundo escuro */
+.logo {
+  display: block;
+  height: 40px;
+  width: auto;
+}
+
+.marca span {
+  padding-left: 0.75rem;
+  border-left: 2px solid var(--verde);
+}
+
+.logo-rodape {
+  height: 34px;
+  margin: 0 auto 0.75rem;
+}
+
+.menu {
+  display: flex;
+  gap: 0.5rem;
+  list-style: none;
+}
+
+.menu a {
+  display: block;
+  padding: 0.5rem 1rem;
+  border-radius: 999px;
+  color: var(--branco);
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 0.95rem;
+  transition: background 0.2s;
+}
+
+.menu a:hover {
+  background: var(--azul);
+}
+
+.menu a[aria-current="page"] {
+  background: var(--verde);
+  color: var(--noite);
+}
+
+/* ===== Banner principal ===== */
+.hero {
+  position: relative;
+  min-height: 340px;
+  display: flex;
+  align-items: center;
+  /* fundo liso + símbolo da UniFECAF translúcido à direita */
+  background: var(--noite) url("../assets/imagens/marca-dagua.png") no-repeat right 8% center / auto 85%;
+}
+
+.hero-texto {
+  position: relative;
+  width: min(1100px, 100% - 2rem);
+  margin: 0 auto;
+  padding: 2rem 0;
+  max-width: 620px;
+  margin-left: max(1rem, calc((100% - 1100px) / 2));
+}
+
+.hero h1 {
+  font-size: clamp(1.8rem, 5vw, 2.8rem);
+  margin-bottom: 0.75rem;
+}
+
+.nivel {
+  display: inline-block;
+  background: var(--verde);
+  color: var(--noite);
+  font-weight: 600;
+  font-size: 0.9rem;
+  padding: 0.25rem 0.9rem;
+  border-radius: 999px;
+  margin-bottom: 1rem;
+}
+
+.xp {
+  width: 100%;
+  max-width: 320px;
+  height: 14px;
+  margin-top: 1.25rem;
+  background: rgba(255, 255, 255, 0.25);
+  border-radius: 999px;
+  overflow: hidden;
+}
+
+.xp span {
+  display: block;
+  width: 40%;
+  height: 100%;
+  background: var(--verde);
+  border-radius: 999px;
+}
+
+/* ===== Sobre ===== */
+.sobre {
+  padding: 3rem 0;
+  background: var(--azul-escuro);
+}
+
+.sobre-grade {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 1.5rem;
+  align-items: center;
+}
+
+.sobre-grade img {
+  border-radius: 12px;
+}
+
+.galeria {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1rem;
+  margin-top: 2rem;
+}
+
+.galeria img {
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  object-fit: cover;
+  border-radius: 16px;
+}
+
+/* ===== Segundo banner ===== */
+.banner {
+  position: relative;
+  min-height: 220px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.banner img {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.banner p {
+  position: relative;
+  padding: 0.75rem 1.5rem;
+  margin: 1rem;
+  text-align: center;
+  font-family: var(--fonte-titulo);
+  font-size: clamp(1.1rem, 3vw, 1.6rem);
+  background: var(--noite);
+  border: 2px solid var(--verde);
+  border-radius: 12px;
+}
+
+/* ===== Nossos livros ===== */
+.livros {
+  padding: 3rem 0;
+  background: var(--azul-escuro);
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5rem;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 1.25rem;
+  background: var(--branco);
+  color: var(--texto);
+  border-radius: 16px;
+  transition: transform 0.2s;
+}
+
+.card:hover {
+  transform: translateY(-4px);
+}
+
+.card img {
+  width: 100%;
+  max-width: 200px;
+  aspect-ratio: 300 / 420;
+  object-fit: cover;
+  border-radius: 8px;
+  margin-bottom: 1rem;
+}
+
+.card h3 {
+  font-size: 1.1rem;
+  margin-bottom: 0.5rem;
+}
+
+.card p {
+  font-size: 0.95rem;
+  margin-bottom: 0.75rem;
+}
+
+.xp-tag {
+  background: var(--verde-claro);
+  color: var(--azul-escuro);
+  font-weight: 600;
+  font-size: 0.85rem;
+  padding: 0.15rem 0.75rem;
+  border-radius: 999px;
+  margin-bottom: 1rem;
+}
+
+.botao {
+  margin-top: auto;
+  padding: 0.6rem 1.5rem;
+  background: var(--verde);
+  color: var(--noite);
+  font-weight: 600;
+  text-decoration: none;
+  border-radius: 999px;
+  transition: background 0.2s;
+}
+
+.botao:hover {
+  background: var(--noite);
+  color: var(--verde);
+}
+
+/* ===== Unidades ===== */
+.unidades {
+  padding: 3rem 0;
+  background: var(--noite);
+}
+
+.unidade {
+  display: grid;
+  grid-template-columns: 280px 1fr;
+  gap: 1.5rem;
+  align-items: center;
+  margin-bottom: 1.5rem;
+}
+
+.unidade img {
+  width: 100%;
+  aspect-ratio: 560 / 380;
+  object-fit: cover;
+  border-radius: 12px;
+}
+
+.unidade h3 {
+  color: var(--verde);
+  font-size: 1.25rem;
+  margin-bottom: 0.5rem;
+}
+
+/* ===== Contatos ===== */
+.contatos {
+  padding: 3rem 0;
+  background: var(--verde-claro);
+  color: var(--texto);
+}
+
+.contatos-grade {
+  display: grid;
+  grid-template-columns: 1fr 280px;
+  gap: 2rem;
+  align-items: center;
+}
+
+.contatos p {
+  margin-bottom: 1rem;
+}
+
+.lista-contato {
+  list-style: none;
+}
+
+.lista-contato li {
+  margin-bottom: 0.6rem;
+}
+
+.contatos a {
+  color: var(--azul-escuro);
+  font-weight: 600;
+}
+
+.contatos a:focus-visible {
+  outline-color: var(--azul-escuro);
+}
+
+.contatos img {
+  border-radius: 12px;
+}
+
+/* ===== Rodapé ===== */
+.rodape {
+  padding: 1.25rem 1rem;
+  text-align: center;
+  font-size: 0.9rem;
+  background: var(--azul-escuro);
+}
+
+/* ===== Responsividade ===== */
+@media (max-width: 900px) {
+  .cards {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .sobre-grade {
+    grid-template-columns: 1fr;
+  }
+
+  .galeria {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 640px) {
+  html {
+    scroll-padding-top: 115px;
+  }
+
+  .topo {
+    flex-direction: column;
+    gap: 0.5rem;
+    padding: 0.5rem 0.75rem;
+  }
+
+  .logo {
+    height: 32px;
+  }
+
+  .marca span {
+    font-size: 0.9rem;
+  }
+
+  .menu {
+    width: 100%;
+    flex-wrap: nowrap;
+    justify-content: center;
+    gap: 0.15rem;
+  }
+
+  .menu a {
+    padding: 0.4rem 0.65rem;
+    font-size: 0.85rem;
+  }
+
+  .cards {
+    grid-template-columns: 1fr;
+  }
+
+  .unidade,
+  .contatos-grade {
+    grid-template-columns: 1fr;
+  }
+
+  .hero {
+    min-height: 300px;
+    background-position: center;
+    background-size: auto 75%;
+  }
+}
+
+@media (max-width: 380px) {
+  .menu a {
+    padding: 0.4rem 0.5rem;
+    font-size: 0.8rem;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  * {
+    transition: none !important;
+    scroll-behavior: auto !important;
+  }
+}
