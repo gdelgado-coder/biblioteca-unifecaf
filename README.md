@@ -88,7 +88,7 @@ Não é preciso instalar nada.
 
 ## Autor
 
-[Seu nome] · RA [seu RA]
+Guilherme Delgado · RA 121881
 Disciplina: Design Web · UniFECAF
 
 > Projeto acadêmico, sem fins comerciais.
