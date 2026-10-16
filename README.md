@@ -4,9 +4,8 @@ Primeira versão do site da Biblioteca Digital UniFECAF, desenvolvida como traba
 
 ## Links
 
-- Site publicado: [inserir link]
-- Repositório: [inserir link]
-- Vídeo pitch: [inserir link]
+- Site publicado: https://gdelgado-coder.github.io/biblioteca-unifecaf/
+- Repositório: https://github.com/gdelgado-coder/biblioteca-unifecaf/
 
 ## Sobre o projeto
 
